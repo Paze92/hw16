@@ -1,0 +1,12 @@
+while True:
+    num_1 = (input('первое число'))
+    num_2 = (input('второе число'))
+    try:
+        num_3 = int(num_1) / int(num_2)
+    except ValueError :
+        print('Вам нужно ввести число!')
+    except ZeroDivisionError:
+        print('Деление на ноль не возможно!')
+    else:
+        print(num_3)
+        break
